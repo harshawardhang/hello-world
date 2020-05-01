@@ -1,0 +1,39 @@
+{
+	"name": "TargetLinkedService",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TargetLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "target"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "RollNo",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Marks",
+				"type": "String"
+			},
+			{
+				"name": "Grade",
+				"type": "String"
+			}
+		]
+	}
+}
